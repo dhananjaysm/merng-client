@@ -4,7 +4,7 @@ import { ApolloClient, InMemoryCache, HttpLink } from "@apollo/client";
 import { ApolloProvider } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 const httpLink = new HttpLink({
-  uri: "http://localhost:5000",
+  uri: "https://secure-bayou-07628.herokuapp.com/",
 });
 const authLink= setContext(()=>{
   const token= localStorage.getItem('jwtToken')
