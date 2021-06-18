@@ -45,7 +45,7 @@ function DeleteButton({ postId, commentId, callback }) {
           as="div"
           color="red"
           floated="right"
-          onClick={(e) => { if (window.confirm('Are you sure you wish to delete this item?')) deletePostOrMutation() }}
+          onClick={(e) =>  { setConfirmOpen(true) }}
         >
           <Icon name="trash" style={{ margin: 0 }} />
         </Button>

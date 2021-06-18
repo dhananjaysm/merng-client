@@ -63,7 +63,6 @@ function Register(props) {
           placeholder ="Password"
           name="password"
           type="password"
-          value={values.password}
           onChange={onChange}
           error={errors.password? true : false}
 
@@ -73,8 +72,6 @@ function Register(props) {
           placeholder ="ConfirmPassword"
           name="confirmPassword"
           type="password"
-
-          value={values.confirmPassword}
           onChange={onChange}
           error={errors.confirmPassword? true : false}
 

@@ -56,7 +56,6 @@ function Login(props) {
           placeholder ="Password"
           name="password"
           type="password"
-          value={values.password}
           onChange={onChange}
           error={errors.password? true : false}
 
